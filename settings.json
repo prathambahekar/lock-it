@@ -1,0 +1,26 @@
+{
+    "app-info" :
+        {
+            "name" : "App",
+            "theme" : "sys",
+            "version" : "v1.0.0",
+            "developer" : "Pratham Bahekar",
+            "build" : "beta",
+            "font" : "consolas",
+
+            "mica" : {
+                "enable" : true,
+                "style" : "DEFAULT",
+                "theme" : "DARK"
+            },
+
+            "window-size" : {
+                "isMin" : true,
+                "isMax" : false,
+                "min" : [500, 450],
+                "max" : [0, 0],
+                "default" : [600, 500]
+            }
+            
+        }
+}

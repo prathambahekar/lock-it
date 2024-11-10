@@ -1,0 +1,247 @@
+/* ===================
+   General Styles 
+==================== */
+
+/* Global font and text color */
+* {
+    /* background-color: #1b1b1b; */ /* Optional background color */
+    font: 600 18pt "Consolas";
+    color: #e0e0e0;
+}
+
+/* ===================
+   QLineEdit Styles 
+==================== */
+
+/* Background color for input fields */
+.QLineEdit {
+    background-color: #181818;
+}
+
+/* ===================
+   QPushButton Styles 
+==================== */
+
+/* Default button appearance */
+.QPushButton {
+    background-color: #181818;
+    padding: 7px;
+    border: 1px solid transparent; /* Optional border for clarity */
+    border-radius: 5px;
+}
+
+/* Button hover effect */
+.QPushButton:hover {
+    background-color: #3a3a3a;
+}
+
+/* Button pressed effect */
+.QPushButton:pressed {
+    background-color: #2b2b2b;
+}
+
+/* ===================
+   Left Menu Button Styles 
+==================== */
+
+/* Default appearance of buttons in the left menu */
+#leftMenu .QPushButton {
+    background-color: transparent;
+    border-radius: 7px;
+}
+
+/* Button hover effect in the left menu */
+#leftMenu .QPushButton:hover {
+    background-color: #3a3a3a;
+}
+
+/* Button pressed effect in the left menu */
+#leftMenu .QPushButton:pressed {
+    background-color: #2b2b2b;
+}
+
+/* ===================
+   Main Frame Styles 
+==================== */
+
+/* Border and background styling for the main frame */
+#mainFrame {
+    border: 2px solid #202326;
+    border-radius: 7px;
+}
+
+/* Background color for inner frames in main frame */
+#mainFrame .QFrame {
+    background-color: #1e1e1e;
+}
+
+/* Background color for labels inside the main frame */
+#mainFrame .QLabel {
+    background-color: #1e1e1e;
+}
+
+/* ===================
+   Left Menu Button Appearance 
+==================== */
+
+/* Padding and font style for buttons in the left menu */
+#leftMenu .QPushButton {
+    padding: 7px;
+    image-position: left center;
+    font: 13pt "Consolas";
+    color: #ffffff;
+}
+
+/* ===================
+   Icon Button Styles 
+==================== */
+
+/* Icon images for various buttons */
+#settings_btn {
+    image: url(:/dark/dark/settings_48_regular.svg);
+}
+
+#home_btn {
+    image: url(:/dark/dark/home_48_regular.svg);
+}
+
+#theme_btn {
+    image: url(:/dark/dark/weather_sunny_48_regular.svg);
+}
+
+#menu_btn {
+    image: url(:/dark/dark/panel_left_text_48_regular.svg);
+}
+
+/* ===================
+   Labels Styles 
+==================== */
+
+/* Main label in settings */
+#stg_lbl_main {
+    padding-left: 4px;
+    font: 700 24pt "Consolas";
+}
+
+/* ===================
+   Stack Widget Styles 
+==================== */
+
+/* Styling for widgets within the settings stack */
+#stack_stg .QWidget {
+    border-radius: 8px;
+    background-color: #4a4a4a;
+}
+
+/* ===================
+   Home App Label Styles 
+==================== */
+
+/* Label for home app button in settings */
+#stg_home_app_bt_lbl {
+    font: 600 13pt "Consolas Semib";
+    padding-left: 16px;
+}
+
+/* Image label padding */
+#stg_home_app_img_lbl {
+    padding: 17px;
+}
+
+/* Header label for home app in settings */
+#stg_home_app_hd_lbl {
+    font: 900 16pt "Consolas";
+    padding-left: 2px;
+}
+
+/* Button for home app in settings */
+#stg_home_app_img_btn {
+    font: 600 14pt "Consolas";
+    padding-left: 4px;
+    border: 0px;
+}
+
+/* ===================
+   Home Info Label Styles 
+==================== */
+
+/* Label for home info button in settings */
+#stg_home_info_bt_lbl {
+    font: 600 13pt "Consolas";
+    padding-left: 16px;
+}
+
+/* Image label padding for info */
+#stg_home_info_img_lbl {
+    padding: 17px;
+}
+
+/* Header label for home info in settings */
+#stg_home_info_hd_lbl {
+    font: 900 16pt "Consolas";
+    padding-left: 2px;
+}
+
+/* Button for home info in settings */
+#stg_home_info_img_btn {
+    font: 600 14pt "Consolas";
+    padding-left: 4px;
+    border: 0px;
+}
+
+/* ===================
+   Page Background Styles 
+==================== */
+
+/* Background colors for different pages */
+#home_page, #setting_page, #info_page {
+    background-color: #1e1e1e;
+}
+
+/* ===================
+   Settings Page Styles 
+==================== */
+
+/* Background color for settings pages */
+#stg_abt_pg, #stg_home_pg, #stg_app_pg {
+    background-color: #1e1e1e;
+}
+
+/* ===================
+   Tooltip Styles 
+==================== */
+
+/* General tooltip appearance */
+QToolTip {
+    background-color: #333333;
+    color: #e0e0e0;
+    border: 1px;
+    padding: 4px;
+    font: 400 12pt "Consolas";
+    border-radius: 10px;
+    opacity: 85%;
+}
+
+/* ===================
+   Tooltips for Specific Buttons 
+==================== */
+
+/* Tooltip for home button */
+#home_btn::after {
+    content: "Go to Home Page";
+}
+
+/* Tooltip for settings button */
+#settings_btn::after {
+    content: "Open Settings";
+}
+
+/* Tooltip for theme button */
+#theme_btn::after {
+    content: "Change Theme";
+}
+
+/* Tooltip for menu button */
+#menu_btn::after {
+    content: "Open Menu";
+}
