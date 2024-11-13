@@ -2,10 +2,11 @@ from files.ui_functions import *
 from files.ui_main import Ui_MainWindow
 import json
 from core import *
-# from files.themes.themes import SetTheme
 
-acess_settings = open("settings.json")
-Data = json.load(acess_settings) 
+
+access_settings = open("settings.json")
+Data = json.load(access_settings) 
+
 
 class MainWindow(QMainWindow):
 	def __init__(self):
@@ -17,10 +18,12 @@ class MainWindow(QMainWindow):
 
 		# Enable drag-and-drop
 		self.setAcceptDrops(True)
+		self.ui.folder_path = ""
 
 		# Applying Settings
 		UIFunctions.Setup_GUI(self)
 		# UIFunctions.ToggleMenu(self, 50, 300)
+		# self.ui.setStyle('Fusion')
 		self.show()
 		UIFunctions.SetTheme(self)
 		# SetTheme(self)

@@ -24,6 +24,7 @@
 
 /* Default button appearance */
 .QPushButton {
+    
     background-color: #181818;
     padding: 7px;
     border: 1px solid transparent; /* Optional border for clarity */

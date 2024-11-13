@@ -18,6 +18,8 @@ def generate_key(password):
     digest = hashlib.sha256(password.encode()).digest()
     return base64.urlsafe_b64encode(digest[:32])
 
+
+
 # Encrypt files in the folder and set folder to read-only
 def encrypt_files(folder_path, key):
     cipher = Fernet(key)
@@ -214,7 +216,7 @@ class FolderLockerApp(QMainWindow):
 
     def unlock_folder(self):
         if not self.folder_path:
-            self.show_message("Please select a folder!", "Error")
+            self.ui.show_message("Please select a folder!", "Error")
             return
 
         password = self.password_input.text()

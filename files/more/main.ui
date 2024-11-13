@@ -21,159 +21,253 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">/* Dark Theme */
+    <string notr="true">/* ===================
+   General Styles 
+==================== */
 
+/* Global font and text color */
 * {
-    /*background-color: #1b1b1b;*/
+    /* background-color: #1b1b1b; */ /* Optional background color */
     font: 600 18pt &quot;Consolas&quot;;
     color: #e0e0e0;
 }
 
-.QPushButton {
+/* ===================
+   QLineEdit Styles 
+==================== */
+
+/* Background color for input fields */
+.QLineEdit {
     background-color: #181818;
-	padding : 7px;
 }
 
+/* ===================
+   QPushButton Styles 
+==================== */
 
+/* Default button appearance */
+.QPushButton {
+    background-color: #181818;
+    padding: 7px;
+    border: 1px solid transparent; /* Optional border for clarity */
+    border-radius: 5px;
+}
+
+/* Button hover effect */
 .QPushButton:hover {
     background-color: #3a3a3a;
 }
 
+/* Button pressed effect */
 .QPushButton:pressed {
     background-color: #2b2b2b;
 }
 
+/* ===================
+   Left Menu Button Styles 
+==================== */
+
+/* Default appearance of buttons in the left menu */
 #leftMenu .QPushButton {
     background-color: transparent;
     border-radius: 7px;
 }
 
+/* Button hover effect in the left menu */
 #leftMenu .QPushButton:hover {
     background-color: #3a3a3a;
 }
 
+/* Button pressed effect in the left menu */
 #leftMenu .QPushButton:pressed {
     background-color: #2b2b2b;
 }
 
+/* ===================
+   Main Frame Styles 
+==================== */
+
+/* Border and background styling for the main frame */
 #mainFrame {
-    border: 2px solid #202326;	
-	border-radius: 7px;
+    border: 2px solid #202326;
+    border-radius: 7px;
 }
 
+/* Background color for inner frames in main frame */
 #mainFrame .QFrame {
-
-	background-color: #1e1e1e;
-	
+    background-color: #1e1e1e;
 }
 
+/* Background color for labels inside the main frame */
 #mainFrame .QLabel {
-
-	background-color: #1e1e1e;
-	
+    background-color: #1e1e1e;
 }
 
+/* ===================
+   Left Menu Button Appearance 
+==================== */
+
+/* Padding and font style for buttons in the left menu */
 #leftMenu .QPushButton {
-	
     padding: 7px;
     image-position: left center;
-    font:  13pt &quot;Consolas&quot;;
+    font: 13pt &quot;Consolas&quot;;
     color: #ffffff;
 }
 
+/* ===================
+   Icon Button Styles 
+==================== */
+
+/* Icon images for various buttons */
 #settings_btn {
-    
-	image: url(:/dark/dark/settings_48_regular.svg);
+    image: url(:/dark/dark/settings_48_regular.svg);
 }
 
 #home_btn {
-    
-	
-	image: url(:/dark/dark/home_48_regular.svg);
+    image: url(:/dark/dark/home_48_regular.svg);
 }
 
 #theme_btn {
-    
-	image: url(:/dark/dark/weather_sunny_48_regular.svg);
+    image: url(:/dark/dark/weather_sunny_48_regular.svg);
 }
 
 #menu_btn {
-    
-	image: url(:/dark/dark/panel_left_text_48_regular.svg);
+    image: url(:/dark/dark/panel_left_text_48_regular.svg);
 }
 
+/* ===================
+   Labels Styles 
+==================== */
+
+/* Main label in settings */
 #stg_lbl_main {
     padding-left: 4px;
     font: 700 24pt &quot;Consolas&quot;;
 }
 
+/* ===================
+   Stack Widget Styles 
+==================== */
+
+/* Styling for widgets within the settings stack */
 #stack_stg .QWidget {
     border-radius: 8px;
     background-color: #4a4a4a;
 }
 
+/* ===================
+   Home App Label Styles 
+==================== */
+
+/* Label for home app button in settings */
 #stg_home_app_bt_lbl {
     font: 600 13pt &quot;Consolas Semib&quot;;
     padding-left: 16px;
 }
 
+/* Image label padding */
 #stg_home_app_img_lbl {
     padding: 17px;
 }
 
+/* Header label for home app in settings */
 #stg_home_app_hd_lbl {
     font: 900 16pt &quot;Consolas&quot;;
     padding-left: 2px;
 }
 
+/* Button for home app in settings */
 #stg_home_app_img_btn {
     font: 600 14pt &quot;Consolas&quot;;
     padding-left: 4px;
-	border: 0px;
+    border: 0px;
 }
 
+/* ===================
+   Home Info Label Styles 
+==================== */
+
+/* Label for home info button in settings */
 #stg_home_info_bt_lbl {
     font: 600 13pt &quot;Consolas&quot;;
     padding-left: 16px;
 }
 
+/* Image label padding for info */
 #stg_home_info_img_lbl {
     padding: 17px;
 }
 
+/* Header label for home info in settings */
 #stg_home_info_hd_lbl {
     font: 900 16pt &quot;Consolas&quot;;
     padding-left: 2px;
 }
 
+/* Button for home info in settings */
 #stg_home_info_img_btn {
     font: 600 14pt &quot;Consolas&quot;;
     padding-left: 4px;
-	border: 0px;
+    border: 0px;
 }
 
-#home_page {
-	background-color: #1e1e1e;
-}
-#setting_page {
-	background-color: #1e1e1e;
-}
-#info_page {
-	background-color: #1e1e1e;
+/* ===================
+   Page Background Styles 
+==================== */
+
+/* Background colors for different pages */
+#home_page, #setting_page, #info_page {
+    background-color: #1e1e1e;
 }
 
-#stg_abt_pg{
-	background-color: #1e1e1e;
+/* ===================
+   Settings Page Styles 
+==================== */
+
+/* Background color for settings pages */
+#stg_abt_pg, #stg_home_pg, #stg_app_pg {
+    background-color: #1e1e1e;
 }
 
-#stg_home_pg{
-	background-color: #1e1e1e;
+/* ===================
+   Tooltip Styles 
+==================== */
+
+/* General tooltip appearance */
+QToolTip {
+    background-color: #333333;
+    color: #e0e0e0;
+    border: 1px;
+    padding: 4px;
+    font: 400 12pt &quot;Consolas&quot;;
+    border-radius: 10px;
+    opacity: 85%;
 }
 
-#stg_app_pg{
-	background-color: #1e1e1e;
+/* ===================
+   Tooltips for Specific Buttons 
+==================== */
+
+/* Tooltip for home button */
+#home_btn::after {
+    content: &quot;Go to Home Page&quot;;
 }
 
+/* Tooltip for settings button */
+#settings_btn::after {
+    content: &quot;Open Settings&quot;;
+}
+
+/* Tooltip for theme button */
+#theme_btn::after {
+    content: &quot;Change Theme&quot;;
+}
+
+/* Tooltip for menu button */
+#menu_btn::after {
+    content: &quot;Open Menu&quot;;
+}
 </string>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">

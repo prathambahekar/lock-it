@@ -5,7 +5,7 @@
 /* Global font and text color */
 * {
     /* background-color : #f3f3f3; */ /* Optional background color */
-    font: 600 20pt "Consolas";
+    font: 600 18pt "Consolas";
     color: #202325;
 }
 
@@ -24,6 +24,7 @@
 
 /* Default button appearance */
 .QPushButton {
+    /* font: "Segoe UI Variable"; */
     background-color: #eff1f3;
     padding: 7px;
     border: 1px solid transparent; /* Optional border for clarity */
