@@ -37,7 +37,7 @@ The **Lock It** app is a lightweight and user-friendly application designed to s
 2. Navigate to the project directory:
 
    ```bash
-   cd folder-locker
+   cd lock-it
    ```
 
 3. Install required dependencies:
@@ -49,7 +49,7 @@ The **Lock It** app is a lightweight and user-friendly application designed to s
 4. Run the application:
 
    ```bash
-   python app.py
+   python main.py
    ```
 
 ## Usage
