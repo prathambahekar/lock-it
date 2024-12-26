@@ -204,4 +204,8 @@ For any inquiries or feedback, feel free to reach out:
 - **Email**: [prathambahekar97@gmail.com](mailto:prathambahekar97@gmail.com)  
 - **GitHub**: [prathambahekar](https://github.com/prathambahekar)
 
+## How it works
+ - Instead of hiding or locking the entire folder
+ - the application locks the individual files within it. Until these files are unlocked, they remain inaccessible.
+
 Thank you for using **Lock It**! Your privacy is our priority.
