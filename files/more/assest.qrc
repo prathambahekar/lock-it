@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="dark">
-    <file>../assest/settings_48_filled.svg</file>
-    <file>../assest/settings_48_regular.svg</file>
-  </qresource>
-</RCC>
