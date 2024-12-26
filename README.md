@@ -15,7 +15,7 @@ The **Lock It** app is a lightweight and user-friendly application designed to s
 
 ## Installation
 
-### Requirements
+ ### Requirements
 
 - **Operating System**: Windows 10/11  
 - **Python**: Version 3.11+  
