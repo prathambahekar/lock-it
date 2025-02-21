@@ -1,0 +1,112 @@
+/* Light Theme */
+
+
+* {
+	/*background-color : #f3f3f3;*/
+	font: 600 20pt "Consolas";
+	color : #202325;
+}
+
+#leftMenu .QPushButton {
+	background-color: transparent;
+	border-radius : 7px;
+}
+
+#leftMenu .QPushButton:hover {
+	background-color: #ededed;
+}
+
+#leftMenu .QPushButton:pressed {
+	background-color: transparent;
+}
+
+#mainFrame {
+	border : 2px solid #e5e5e5;
+	border-radius: 7px;
+}
+
+#mainFrame .QFrame {
+
+	background-color: #f6f8fa;
+	
+}
+
+#mainFrame .QLabel {
+
+	background-color: #f6f8fa;
+	
+}
+
+#leftMenu .QPushButton {
+	padding : 7px;
+	image-position: left center;
+	font:  13pt "Consolas";
+	color: rgb(0, 0, 0);
+}
+
+#settings_btn {
+    
+	image: url(:/light/light/settings_48_regular.svg);
+}
+
+#home_btn {
+    
+	
+	image: url(:/light/light/home_48_regular.svg);
+}
+
+#theme_btn {
+    
+	image: url(:/light/light/weather_sunny_48_regular.svg);
+}
+
+#menu_btn {
+    
+	image: url(:/light/light/panel_left_text_48_regular.svg);
+}
+
+#home_page {
+	background-color: #f6f8fa;
+}
+#setting_page {
+	background-color: #f6f8fa;
+}
+#info_page {
+	background-color: #f6f8fa;
+}
+
+#stg_lbl_main {
+    padding-left: 4px;
+    font: 700 24pt "Consolas";
+}
+
+#stg_home_app_bt_lbl {
+    font: 600 13pt "Consolas";
+    padding-left: 16px;
+}
+
+#stg_home_app_hd_lbl {
+    font: 900 16pt "Consolas";
+    padding-left: 2px;
+}
+
+#stg_home_app_img_lbl {
+    padding: 17px;
+}
+
+#stg_abt_pg{
+	background-color: #f6f8fa;
+}
+
+#stg_home_pg{
+	background-color: #f6f8fa;
+}
+
+#stg_app_pg{
+	background-color: #f6f8fa;
+}
+
+#stack_stg .QWidget {
+    border-radius: 8px;
+    background-color: #e5e5e5;
+}

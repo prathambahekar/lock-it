@@ -1,211 +1,34 @@
-# Lock It
+# Application Overview
 
-## Overview
+This is a GUI application built using PySide6, a Python binding for the Qt application framework. The application loads settings from a JSON file and applies them to the user interface.
 
-The **Lock It** app is a lightweight and user-friendly application designed to secure sensitive files and folders on your system. With robust encryption and an intuitive interface, it ensures your data remains private and accessible only to you.
+## Files and Modules
 
-## Features
+The application consists of the following files and modules:
+- `ui_functions.py`: Contains utility functions for setting up and customizing the GUI.
+- `ui_main.py`: Contains the UI definition for the main application window.
+- `core.py`: Contains core application logic (not shown in the provided code snippet).
+- `settings.json`: Contains application settings in JSON format.
+- `main.py`: Initializes the application and sets up the GUI.
 
-- **Password Protection**: Lock and unlock folders using a secure password.
-- **Encryption**: Employs advanced algorithms to safeguard your data.
-- **User-Friendly Interface**: Sleek design for effortless navigation.
-- **Fast Performance**: Efficiently locks and unlocks files without compromising system performance.
-- **Customizable**: Allows you to tailor app settings to suit your security needs.
-- **Dark Mode Support**: Automatically adapts to your system's theme.
+## Main Application File (`main.py`)
 
-## Installation
+The main application file, `main.py`, is responsible for initializing the application and setting up the GUI. Here's a breakdown of the code:
 
- ### Requirements
+1. **Import Modules**: The first line imports the necessary modules: `ui_functions` for GUI utility functions, `ui_main` for the UI definition, and `json` for loading settings from the `settings.json` file.
+2. **Load Settings**: The `acess_settings` variable is opened, and the `Data` variable is loaded with the contents of the `settings.json` file using the `json.load()` function.
+3. **Define MainWindow Class**: The `MainWindow` class is defined, which inherits from `QMainWindow`. This class represents the main application window.
+4. **Initialize MainWindow**: In the `__init__` method, the `QMainWindow` constructor is called, and the `ui` attribute is set to an instance of `Ui_MainWindow`, which is the UI definition for the main window.
+5. **Setup UI**: The `setupUi` method is called to set up the GUI, and the `Setup_GUI` function from `ui_functions` is called to apply settings to the GUI.
+6. **Show Window**: The `show` method is called to display the window, and the `SetTheme` function from `ui_functions` is called to set the theme for the application.
+7. **Start Application**: In the `if __name__ == "__main__":` block, the application is initialized by creating a `QApplication` instance and passing the command-line arguments to it. An instance of the `MainWindow` class is created, and the `exec_` method is called to start the application's event loop.
 
-- **Operating System**: Windows 10/11  
-- **Python**: Version 3.11+  
-- **Dependencies**:
-  - `pyside6`
-  - `cryptography`
-  - `win32mica`
-  - `darkdetect`
+## Settings Menu Screenshot
 
-### Steps
+![Light Theme](https://github.com/prathambahekar/better-gui/blob/master/files/more/img/light-theme.png)
+![Dark Theme](https://github.com/prathambahekar/better-gui/blob/master/files/more/img/dark-theme.png)
+## Notes
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/folder-locker.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd folder-locker
-   ```
-
-3. Install required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Run the application:
-
-   ```bash
-   python main.py
-   ```
-
-## Usage
-
-1. Launch the application.
-2. Set up your master password during the first run.
-3. Select a folder to lock or unlock.
-4. Provide your password to secure or access your data.
-5. Enjoy peace of mind knowing your files are protected.
-
-## Contributing
-
-We welcome contributions! Follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch:
-
-   ```bash
-   git checkout -b feature-name
-   ```
-
-3. Commit your changes:
-
-   ```bash
-   git commit -m "Add feature description"
-   ```
-
-4. Push to your branch:
-
-   ```bash
-   git push origin feature-name
-   ```
-
-5. Create a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Acknowledgments
-
-- **Libraries**: Thanks to the creators of `pyside6`, `cryptography`, `win32mica`, and `darkdetect` for their fantastic libraries.
-- **Inspiration**: Helping users secure sensitive data with ease and efficiency.
-
-## Contact
-
-For any inquiries or feedback, feel free to reach out:
-
-- **Email**: [prathambahekar97@gmail.com](mailto:prathambahekar97@gmail.com)  
-- **GitHub**: [prathambahekar](https://github.com/prathambahekar)
-
-Thank you for using **Lock It**! Your privacy is our priority.
-
-# Lock It
-
-## Overview
-
-The **Lock It** app is a lightweight and user-friendly application designed to secure sensitive files and folders on your system. With robust encryption and an intuitive interface, it ensures your data remains private and accessible only to you.
-
-## Features
-
-- **Password Protection**: Lock and unlock folders using a secure password.
-- **Encryption**: Employs advanced algorithms to safeguard your data.
-- **User-Friendly Interface**: Sleek design for effortless navigation.
-- **Fast Performance**: Efficiently locks and unlocks files without compromising system performance.
-- **Customizable**: Allows you to tailor app settings to suit your security needs.
-- **Dark Mode Support**: Automatically adapts to your system's theme.
-
-## Installation
-
-### Requirements
-
-- **Operating System**: Windows 10/11  
-- **Python**: Version 3.11+  
-- **Dependencies**:
-  - `pyside6`
-  - `cryptography`
-  - `win32mica`
-  - `darkdetect`
-
-### Steps
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/folder-locker.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd lock-it
-   ```
-
-3. Install required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Run the application:
-
-   ```bash
-   python main.py
-   ```
-
-## Usage
-
-1. Launch the application.
-2. Set up your master password during the first run.
-3. Select a folder to lock or unlock.
-4. Provide your password to secure or access your data.
-5. Enjoy peace of mind knowing your files are protected.
-
-## Contributing
-
-We welcome contributions! Follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch:
-
-   ```bash
-   git checkout -b feature-name
-   ```
-
-3. Commit your changes:
-
-   ```bash
-   git commit -m "Add feature description"
-   ```
-
-4. Push to your branch:
-
-   ```bash
-   git push origin feature-name
-   ```
-
-5. Create a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Acknowledgments
-
-- **Libraries**: Thanks to the creators of `pyside6`, `cryptography`, `win32mica`, and `darkdetect` for their fantastic libraries.
-- **Inspiration**: Helping users secure sensitive data with ease and efficiency.
-
-## Contact
-
-For any inquiries or feedback, feel free to reach out:
-
-- **Email**: [prathambahekar97@gmail.com](mailto:prathambahekar97@gmail.com)  
-- **GitHub**: [prathambahekar](https://github.com/prathambahekar)
-
-## How it works
- - Instead of hiding or locking the entire folder
- - the application locks the individual files within it. Until these files are unlocked, they remain inaccessible.
-
-Thank you for using **Lock It**! Your privacy is our priority.
+- This application uses PySide6, which is a Python binding for the Qt application framework.
+- The `core` module is not shown in the provided code snippet, but it is likely to contain core application logic.
+- The `settings.json` file is not shown in the provided code snippet, but it should contain application settings in JSON format.

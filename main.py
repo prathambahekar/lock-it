@@ -1,10 +1,11 @@
-from files.ui_functions import *
-from files.ui_main import Ui_MainWindow
 import json
+# importing core modules
 from core import *
-
-access_settings = open("settings.json")
-Data = json.load(access_settings) 
+# importing ui files
+from files.ui.ui_functions import *
+from files.ui.ui_main import Ui_MainWindow
+# importing app files
+from files.app.app_functions import AppFunctions
 
 class MainWindow(QMainWindow):
 	def __init__(self):
@@ -17,18 +18,20 @@ class MainWindow(QMainWindow):
 		# Enable drag-and-drop
 		self.setAcceptDrops(True)
 		self.ui.folder_path = ""
-
-		# Applying Settings
+		
+		# Applying UI Settings
 		UIFunctions.Setup_GUI(self)
-		# UIFunctions.ToggleMenu(self, 50, 300)
-		# self.ui.setStyle('Fusion')
+
+		# Applying App Settings
+		AppFunctions.Setup_App(self)
+
+		# AppFunctions.printline("")
+
 		self.show()
+		
+		#setting theme
 		UIFunctions.SetTheme(self)
-		# SetTheme(self)
-
-		# self.ui.lock_folder_btn.clicked.connect(lambda : UIFunctions.show_message(self, "hey", "Lock your file"))
-
-
+		
 	def dragEnterEvent(self, event: QDragEnterEvent):
 		if event.mimeData().hasUrls():
 			event.acceptProposedAction()
@@ -40,12 +43,8 @@ class MainWindow(QMainWindow):
 				self.ui.folder_path = folder_path
 				self.ui.drag_n_drop_lbl.setText(f"Selected Folder : {os.path.basename(folder_path)}")
 				break
-	
-
-	
 		
 if __name__ == "__main__":
-	
 	app = QApplication(sys.argv)
 	window = MainWindow()
 	sys.exit(app.exec())

@@ -1,26 +1,29 @@
 {
-    "app-info" :
-        {
-            "name" : "App",
-            "theme" : "sys",
-            "version" : "v1.0.0",
-            "developer" : "Pratham Bahekar",
-            "build" : "beta",
-            "font" : "consolas",
-
-            "mica" : {
-                "enable" : true,
-                "style" : "DEFAULT",
-                "theme" : "DARK"
-            },
-
-            "window-size" : {
-                "isMin" : true,
-                "isMax" : false,
-                "min" : [500, 450],
-                "max" : [0, 0],
-                "default" : [600, 500]
+    "app": {
+        "name": "my python app",
+        "version": "1.0.0",
+        "developer": "Pratham Bahekar",
+        "build": "developer",
+        "font": "Consolas",
+        "theme": {
+            "type": "system",
+            "mica": {
+                "enabled": true,
+                "style": "default",
+                "theme": "default"
             }
-            
+        },
+        "icon": {
+            "custom": false
+        },
+        "window": {
+            "size": {
+                "min": [450, 350],
+                "default": [1000, 650],
+                "max": [0, 0],
+                "isMinimized": true,
+                "isMaximized": false
+            }
         }
+    }
 }
