@@ -1,6 +1,6 @@
 # Application Overview
 
-This is a GUI application built using PySide6, a Python binding for the Qt application framework. The application loads settings from a JSON file and applies them to the user interface.
+This is a GUI application built using PyQt6, a Python binding for the Qt application framework. The application loads settings from a JSON file and applies them to the user interface.
 
 ## Files and Modules
 
@@ -29,6 +29,6 @@ The main application file, `main.py`, is responsible for initializing the applic
 ![Dark Theme](https://github.com/prathambahekar/better-gui/blob/master/files/more/img/dark-theme.png)
 ## Notes
 
-- This application uses PySide6, which is a Python binding for the Qt application framework.
+- This application uses PyQt6, which is a Python binding for the Qt application framework.
 - The `core` module is not shown in the provided code snippet, but it is likely to contain core application logic.
 - The `settings.json` file is not shown in the provided code snippet, but it should contain application settings in JSON format.
